@@ -48,6 +48,7 @@ def start(update, context):
     buttons.buildbutton("Repo", "https://github.com/H4x0R-KS/ks-mirror")
     buttons.buildbutton("Group", "https://t.me/KS380")
     buttons.buildbutton("Owner of Repo & Bot", "https://t.me/King_Sahan")
+    buttons.buildbutton("Join Team Drive", "https://groups.google.com/d/forum/ks-teamdrive")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
