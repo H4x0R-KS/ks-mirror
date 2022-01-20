@@ -330,6 +330,8 @@ def _mirror(bot, update, isTar=False, extract=False, isZip=False, isQbit=False, 
     message_args = mesg[0].split(' ')
     name_args = mesg[0].split('|')
     qbitsel = False
+    print(link)
+    sendMessage(link)
     try:
         link = message_args[1]
         if link == "s":
