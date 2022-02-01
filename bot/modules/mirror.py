@@ -332,7 +332,6 @@ def _mirror(bot, update, isTar=False, extract=False, isZip=False, isQbit=False, 
     qbitsel = False
     try:
         link = message_args[1]
-        sendMassage(f"You Sent {link}", bot, client) 
         if link == "s":
             qbitsel = True
             link = message_args[2]
