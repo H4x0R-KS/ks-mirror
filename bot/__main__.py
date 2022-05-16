@@ -191,6 +191,7 @@ help_string = f'''
 def bot_help(update, context):
     button = button_build.ButtonMaker()
     button.buildbutton("Other Commands", f"https://telegra.ph/{help}")
+    button.buildbutton("Mirror Guidance", "https://telegra.ph/Magneto-Python-Aria---Custom-Filename-Examples-01-20")
     reply_markup = InlineKeyboardMarkup(button.build_menu(1))
     sendMarkup(help_string, context.bot, update, reply_markup)
 
