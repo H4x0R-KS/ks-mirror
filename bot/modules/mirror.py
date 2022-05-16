@@ -331,9 +331,9 @@ def _mirror(bot, update, isTar=False, extract=False, isZip=False, isQbit=False, 
     name_args = mesg[0].split('|')
     qbitsel = False
     if self.message.from_user.username:
-                unamei = f"@{self.message.from_user.username}"
-            else:
-                unamei = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
+            unamei = f"@{self.message.from_user.username}"
+        else:
+            unamei = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
     linki = message_args[1]
     nmsg = f'<b>{unamei} Send,</b>\n<code>{linki}</code>\n to mirror to gdrive'
     sendMessage(nmsg, self.bot, self.update)
