@@ -58,7 +58,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\nPlease deploy your own <b>slam-mirrorbot</b>.',
+            'Oops! not a Authorized user.\nPlease deploy your own <b>mirrorbot</b>. or contact the owner @King_Sahan .',
             context.bot,
             update,
             reply_markup,
